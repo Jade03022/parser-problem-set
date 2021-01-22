@@ -1,0 +1,9 @@
+1 + 10 - ACCEPT
+1 * 10 * 10 + 4 + (6 + 12345) - ACCEPT
+[1 + 10] = 11 - REJECT. Offending token '='
+1 + + 10 * 5 * 4 * 3 + 2 * 1 = = - REJECT. Offending token '+'
+++++++++++++++++ - REJECT. Offending token '+'
+5 - ACCEPT
+(1 + 4) * (6 + 4) - ACCEPT
+(1 + x) + (6 + 4) - REJECT. Offending token 'x'
+1 + 510 + () - REJECT. Offending token ')'

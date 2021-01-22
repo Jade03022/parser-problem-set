@@ -1,0 +1,28 @@
+start : arithmetic_expression ;
+
+arithmetic_expression : paren_number_expression arithmetic_expression_operation ;
+paren_number_expression : OPEN_PAREN arithmetic_expression CLOSE_PAREN | OPEN_BRACKETS arithmetic_expression CLOSE_BRACKETS | digit+ arithmetic_expression_operation ;
+arithmetic_expression_operation : add_operation | multiply_operation | ;
+add_operation : PLUS arithmetic_expression ;
+multiply_operation : MULTIPLY arithmetic_expression ;
+
+digit : ZERO | ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE ;
+
+OPEN_PAREN : '(' ;
+CLOSE_PAREN : ')' ;
+OPEN_BRACKETS : '[' ;
+CLOSE_BRACKETS : ']' ;
+
+PLUS : '+' ;
+MULTIPLY : '*' ;
+
+ZERO : '0' ;
+ONE : '1' ;
+TWO : '2' ;
+THREE : '3' ;
+FOUR : '4' ;
+FIVE : '5' ;
+SIX : '6' ;
+SEVEN : '7' ;
+EIGHT : '8' ;
+NINE : '9' ;
