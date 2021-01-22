@@ -4,6 +4,6 @@
  
  Entry class file: Main.java
  
-# instructions
+# Instructions
  1. Simply run Main.java file.
  2. OPTIONAL: Change Input.txt contents to insert the test cases.
